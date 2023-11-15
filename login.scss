@@ -198,7 +198,7 @@ body {
 }
 //a-tag container in navbar
 .loginNavRef {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 1);
   width: 30%;
   min-width: 25%;
   display: flex;
@@ -410,5 +410,28 @@ h4 {
   }
   to {
     opacity: 1;
+  }
+}
+@media screen and (max-width: 800px){
+  #loginNav {
+    width: 100%;
+  }
+  .loginNavRef {
+    width: 90vw;
+  }
+  .aboutTitle {
+    padding-top: 10%;
+    width: 100%;
+    font-size: 2.5rem;
+    margin-bottom: 2%;
+  }
+  #Github {
+    margin-bottom: 2%;
+  }
+  .demoSpan {
+    display: flex;
+  }
+  .teamHeader {
+    padding-top: 10%;
   }
 }
