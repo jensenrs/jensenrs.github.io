@@ -1,12 +1,13 @@
 {
+  "homepage": "http://jensenrs.github.io/jensenrs.github.io",
   "name": "kurrent",
   "version": "1.0.0",
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
+    "start": "webpack-dev-server --mode development --open",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "webpack-dev-server --mode development --open",
     "build": "NODE_ENV=production webpack",
     "dev": "concurrently \"nodemon server/server.js\" \"NODE_ENV=development webpack serve --open\"",
     "test": "jest --verbose"
